@@ -22,7 +22,7 @@ int centroid(int u, int par)
 		if(it == par)
 			continue;
 		if(subtree[u] > (nodes >> 1))
-			return centroid(u, it);
+			return centroid(it, u);
 	}
 	return u;
 }
